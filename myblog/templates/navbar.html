@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="#">J.Choi</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-md-auto">
+        <a class="nav-item nav-link active" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="{% url 'blog:about' %}">About</a>
+        <a class="nav-item nav-link" href="{% url 'blog:portfolio' %}">Portfolio</a>
+        <a class="nav-item nav-link" href="{% url 'blog:contact' %}">Contact</a>
+        <a class="nav-item nav-link" href="#">Resume</a>
+      </div>
+    </div>
+  </div>
+</nav>
