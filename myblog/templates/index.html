@@ -1,9 +1,35 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}
   Welcome Home!
 {% endblock %}
 
+{% block jumboblock %}
+<h1>This is home page!</h1>
+{% endblock %}
+
 {% block bodyblock %}
-  <h1>This is home page!</h1>
+  <div class="row align-items-center">
+    <div class="col-md-6 col-lg-4">
+      <img class="img-thumbnail" src="{% static "images/1.jpeg" %}" alt="">
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <img class="img-thumbnail" src="{% static "images/2.jpg" %}" alt="">
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <img class="img-thumbnail" src="{% static "images/3.jpg" %}" alt="">
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <img class="img-thumbnail" src="{% static "images/1.jpeg" %}" alt="">
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <img class="img-thumbnail" src="{% static "images/2.jpg" %}" alt="">
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <img class="img-thumbnail" src="{% static "images/3.jpg" %}" alt="">
+    </div>
+
+  </div>
+
 {% endblock %}

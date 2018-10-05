@@ -20,12 +20,19 @@
 
     {% include "navbar.html" %}
 
+
       <div class="jumbotron jumbotron-fluid">
         <div class="container text-center">
-          {% block bodyblock %}
+          {% block jumboblock %}
           <h1>Hello, world!</h1>
           {% endblock %}
         </div>
+      </div>
+
+      <div class="container text-center">
+        {% block bodyblock %}
+
+        {% endblock %}
       </div>
 
     <!-- Optional JavaScript -->
